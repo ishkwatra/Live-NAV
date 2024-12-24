@@ -6,27 +6,27 @@ This project is a Python-based Mutual Fund NAV Estimation Tool that provides an 
 
 **Key Features:**
 1. Two Levels of Analysis:
-  i. Nominal Analysis: For quick estimation using a summarized portfolio (~15-20 seconds).
-  ii. In-Depth Analysis: For a comprehensive estimate using a detailed portfolio (~120-130 seconds).
+i. Nominal Analysis: For quick estimation using a summarized portfolio (~15-20 seconds).
+ii. In-Depth Analysis: For a comprehensive estimate using a detailed portfolio (~120-130 seconds).
 
 2. Dynamic Stock Price Fetching:
-  i. Automatically retrieves real-time stock prices (current and previous closeing price) using Yahoo Finance for each stock in the portfolio.
+i. Automatically retrieves real-time stock prices (current and previous closeing price) using Yahoo Finance for each stock in the portfolio.
 
 3. Accurate Weightage Calculations:
-   i. Tracks and calculates the weightage of stocks successfully fetched.
-   ii. Reports errors for stocks that fail to fetch prices and excludes them from calculations.
+i. Tracks and calculates the weightage of stocks successfully fetched.
+ii. Reports errors for stocks that fail to fetch prices and excludes them from calculations.
 
 4. NAV Estimation:
-   i. Calculates the percentage change for each stock.
-   ii. Multiplies the percentage change by its weightage to estimate the fund's total NAV change.
+i. Calculates the percentage change for each stock.
+ii. Multiplies the percentage change by its weightage to estimate the fund's total NAV change.
 
 5. Previous NAV Fetching:
-   i. Retrieves the most recent NAV from Moneycontrol.
-   ii. Equity-Cash-Debt Breakup: Provides insights into the fund's asset allocation, including equity, cash, and debt percentages.
+i. Retrieves the most recent NAV from Moneycontrol.
+ii. Equity-Cash-Debt Breakup: Provides insights into the fund's asset allocation, including equity, cash, and debt percentages.
 
 6. Investment Tracking:
-   i. Accepts user input for total investment amount and units held. (in-progress)
-   ii. Calculates the current value of the investment and overall profit/loss based on the estimated NAV. (in-progress)
+i. Accepts user input for total investment amount and units held. (in-progress)
+ii. Calculates the current value of the investment and overall profit/loss based on the estimated NAV. (in-progress)
 
 **How It Works:**
 1. Calculation Logic:
