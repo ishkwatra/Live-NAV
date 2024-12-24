@@ -100,6 +100,8 @@ def fetch_previous_nav():
     soup = BeautifulSoup(response.text, 'html.parser')
 
     nav_element = soup.find('span', class_='amt')
+    if nav_element is None:
+        return -1
     prev_nav = float((nav_element.text.strip())[2:])
     return prev_nav
 
