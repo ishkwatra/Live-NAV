@@ -4,3 +4,5 @@
 1500 99.433 #moti-small
 2000 185.533 #trust-small
 1000 19.242 #bandhan-small
+
+#enter investment amount and number of mf units here for easier input
