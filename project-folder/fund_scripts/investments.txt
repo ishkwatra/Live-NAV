@@ -1,0 +1,6 @@
+2000 0.977 #hdfc-flexi
+2000 16.865 #jm-flexi
+2000 52.387 #moti-l&m
+1500 99.433 #moti-small
+2000 185.533 #trust-small
+1000 19.242 #bandhan-small

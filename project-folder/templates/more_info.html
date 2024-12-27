@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Information</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/more_info">More Information</a></li>
+            <li><a href="/about">About Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container1">
+        <h1>More Information</h1>
+
+        <h2>How It Works</h2>
+        <p>This tool estimates the current NAV of mutual funds by using portfolio holdings, their weightages, and live
+            stock prices. The calculation follows these steps:</p>
+        <ol>
+            <li>Fetch the previous day's NAV from trusted sources like Moneycontrol.</li>
+            <li>Retrieve current and previous stock prices from Yahoo Finance.</li>
+            <li>Estimate percentage changes for each stock and multiply them by their respective weights in the
+                portfolio.</li>
+            <li>Sum up these weighted changes to estimate the overall NAV change.</li>
+            <li>Provide a detailed report, including profits and errors for stocks with missing data.</li>
+        </ol>
+
+        <h2>Current Features</h2>
+        <ul>
+            <li>Support for 5 mutual funds with detailed calculations.</li>
+            <li>Real-time fetching of stock prices and NAV data.</li>
+            <li>Error handling for unavailable stock data.</li>
+            <li>Profit summary based on user-provided investment data.</li>
+            <li>Expandable detailed report for each mutual fund.</li>
+        </ul>
+
+        <h2>Future Enhancements</h2>
+        <ul>
+            <li>Multi-threading to speed up stock price fetching.</li>
+            <li>Support for custom portfolios uploaded via CSV files.</li>
+            <li>Integration of dividend adjustments for more accurate NAV estimates.</li>
+            <li>Historical NAV trends and performance comparison between funds.</li>
+            <li>A user-friendly interface for easier access and analysis.</li>
+        </ul>
+    </div>
+</body>
+
+</html>

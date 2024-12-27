@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Results</title>
+</head>
+
+<body>
+    <h1>Results for Analysis of {{results['fund_name']}}</h1>
+    <p><strong>Previous NAV:</strong> {{ results['prev_nav'] }}</p>
+    <p><strong>New Estimated NAV:</strong> {{ results['estimated_nav'] }}</p>
+    <br>
+    <p><strong>Invested Amount:</strong> {{ results['invested_amount'] }}</p>
+    <p><strong>Current Amount:</strong> {{ results['current_amount'] }}</p>
+    <p><strong>Profit/Loss:</strong> {{ results['profit'] }}</p>
+    <br>
+    <p><strong>Errors Faced:</strong> {{ results['errors_count'] }}</p>
+    <p><strong>Stocks Calculated:</strong> {{ results['stocks_calc'] }}</p>
+    <p><strong>Disclaimer:</strong> {{ results['info'] }}</p>
+</body>
+
+</html>

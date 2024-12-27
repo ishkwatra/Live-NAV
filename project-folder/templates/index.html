@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutual Fund NAV Estimator</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/more_info">More Information</a></li>
+            <li><a href="/about">About Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Mutual Fund NAV Estimator</h1>
+        <p>Estimate today's NAV for selected mutual funds based on their stock portfolio.</p>
+
+        <!-- Form Section -->
+        <form id="analysisForm">
+            <label for="fund">Select Mutual Fund:</label>
+            <select name="fund" id="fund" required>
+                <option value="latest_nav_hdfcflexicap">HDFC Flexi Cap</option>
+                <option value="latest_nav_jmflexicap">JM Flexi Cap</option>
+                <option value="latest_nav_motilallargeandmidcap">Motilal Large and Mid Cap</option>
+                <option value="latest_nav_motilalsmallcap">Motilal Small Cap</option>
+                <option value="latest_nav_trustsmallcap">Trust Small Cap</option>
+                <option value="latest_nav_bandhansmallcap">Bandhan Small Cap</option>
+            </select>
+
+            <label for="depth">Select Analysis Depth:</label>
+            <select name="depth" id="depth" required>
+                <option value="1">Nominal Analysis (Fast: ~15s)</option>
+                <option value="2">In-Depth Analysis (Slow: ~120s)</option>
+            </select>
+
+            <label for="investment">Enter Current Investment Amount in INR (Optional):</label>
+            <input type="number" name="investment" id="investment" placeholder="Enter amount">
+
+            <label for="units">Enter Current Number of Units Held (Optional):</label>
+            <input type="float" name="units" id="units" placeholder="Enter units">
+
+            <button type="submit" id="submitButton">Go</button>
+        </form>
+
+        <!-- Progress Bar -->
+        <div id="progressContainer" class="progress-container">
+            <div class="progress-bar-container">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+            <p id="loadingText" class="loading-text"></p>
+        </div>
+
+        <!-- Results Container -->
+        <div id="resultsContainer" class="results-container">
+            <h2>Analysis Results</h2>
+            <div id="results" class="results"></div>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+
+</html>
