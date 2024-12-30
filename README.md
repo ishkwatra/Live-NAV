@@ -66,7 +66,7 @@ Add a portfolio comparison feature.
 Convert the tool into a REST API or web app for remote use.
 Deploy on platforms like Heroku or Streamlit Cloud.
 
-6. Code Refactoring and Testing:
+6. Code Refactoring & Testing:
 Modularize functions for better readability and maintainability.
 Add automated tests using unittest or pytest.
 
