@@ -168,8 +168,7 @@ def fetch_previous_nav():
 
 def run_analysis(depth, investment, units):
 
-    file = open(
-        r'C:\Users\hp\Documents\Ish\codes\self proj\project-folder-live-nav\project-folder\fund_scripts\investments.txt', 'r')
+    file = open("fund_scripts/investments.txt", 'r')
     raw_lines = file.readlines()
     if raw_lines == []:
         pass
